@@ -1,0 +1,42 @@
+<% include partials/header%>
+
+<!--     <h1> All Subleases</h1> -->
+    <% if (errors !=undefined){ %>
+       <ul>
+       <% errors.forEach(function(error){ %>
+       <li><%= error.msg %></li>
+    <% }) %>
+      </ul>
+    <% } %>
+<div class="grids">
+ <div class="col-xs-12 col-md-10 col-lg-10 offset-lg-1 offset-md-1">
+<!-- 
+   <div class="col-xs-12 col-md-8 col-lg-8 offset-lg-5 offset-md-2"> -->
+
+<!--     <ul> -->
+    <% subleases.forEach( function(sl){ %>
+    <a href="/sublease/one/<%= sl._id %>">
+      <div class="grid">
+<!--         http://via.placeholder.com/450x350 -->
+        <span><img src="/uploads/<%=sl.photos[0]%>" style="display: inline-block; vertical-align: top; "></span>
+  <span><div class="block2" style="display: inline-block; width: 55%;vertical-align: top;"> 
+      <h3 style="color:#4B9CD3"> <%= sl.aptname%> <%= sl.bedroomnum %>B<%=sl.bathroomnum %>B </h3>
+      <p><span style="font-weight:bold">Availability:</span> <%= sl.startdate%> to <%= sl.enddate%> </p>
+      <p><span style="font-weight:bold">Price Range:</span> <%= sl.pricefrom%> to <%= sl.priceto%></p>
+      <p><span style="font-weight:bold">Roommates:</span> <%= sl.rmnum%> <%= sl.rmgender%></p>
+      <p><span style="font-weight:bold">Description: </span>  <%= sl.description%></p>
+        </div></span>
+  </div>
+</a>
+    <% }) %>
+<!--   </div></span>
+  </div> -->
+
+
+</div>​
+<!--     </ul> -->
+</div>
+</div>
+</div>
+<% include partials/footer%>
+

@@ -1,0 +1,240 @@
+<% include partials/header%>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <title>Sublease My Room</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/styles.css"> -->
+</head>
+<body>
+
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Sublease My Room <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Log in with Facebook</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+<div class="subleaseapp">
+ <div class="col-xs-12 col-md-8 col-lg-8 offset-lg-2 offset-md-2">
+
+  <div class="subleaseform">
+    <div class="col-xs-12 col-md-10 col-lg-10 offset-lg-1 offset-md-1">
+      <div class="content">
+    <h2>Sublease My Room </h2>
+   <div>
+
+
+  <form action="/sublease/add" method="post" enctype='multipart/form-data'>
+  
+  <div class ="block">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="">
+  </div>
+
+
+  <span>
+  <div class="block">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="">
+  </div>
+     </span>
+
+  <span>
+  <div class="block">
+    <label for="email">Email(valid UNC email)</label>
+    <input type="email" id="email" name="email" placeholder="">
+  </div>
+</span>
+
+     <br/><br/>
+
+  <div class="block">
+    <label for="aptname">Apartment name</label>
+    <input type="text" id="aptname" name="aptname" placeholder="">
+  </div>
+
+
+
+   <span>
+  <div class="block">
+    <label for="aptadr">Apartment address</label>
+    <input type="text" id="aptadr" name="aptadr" placeholder="">
+  </div>
+</span>
+     <br/><br/>
+
+  <div class="block">
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" placeholder="">
+  </div>
+
+<span>
+  <div class="block">
+    <label for="state">State</label>
+    <input type="text" id="state" name="state" placeholder="">
+  </div>
+</span>
+
+<span>
+  <div class="block">
+    <label for="zipcode">Zipcode</label>
+    <input type="number" id="zipcode" name="zipcode" placeholder="">
+  </div>
+</span>
+
+     <br/><br/>
+
+  <div class="block">
+    <label for="aptstyle">Apartment style</label>
+      <div class="block">
+    <input type="number" name="bedroomnum" min="1" max="5"  value="1">
+  </div> &nbsp;
+    <div class="block">
+    <label>bedroom(s)</label>
+  </div>
+  </div>
+&nbsp;
+  <div class="block">
+      <div class="block">
+    <input type="number" name="bathroomnum" min=0 max="5"  value="0">
+  </div> &nbsp;
+    <div class="block">
+    <label>bathroom(s)</label>
+  </div>
+  </div>
+
+<span>
+  <div class="block">
+    <label for="roommate">Current Roommates</label>
+     <div class="block">
+    <input type="number" name="roommatemnum" min="0" max="5"  value="0">
+  </div> &nbsp;
+   <div class="block">
+    <select id="rmgender" name="rmgender">
+      <option value="male only">Male only</option>
+      <option value="female only">Female only</option>
+      <option value="both">Male and female</option>
+    </select>
+  </div>
+  </div>
+</span>
+
+ <br/><br/>
+<div class="block">
+  <label for="availability">Availability</label>
+  <div class="block">
+    <input type="date" id="startdate" name="startdate">
+  </div>
+    <div class="block">
+    <label>to</label>
+  </div>
+    <div class="block">
+    <input type="date" id="enddate" name="enddate">
+  </div>
+</div>
+
+    
+   <span>
+    <div class="block">
+    <label for="nbsublease">No. of room for sublease</label>
+    <input type="number" name="roomforsub" min="0" max="5"  value="0">
+  </div>
+</span>
+
+ <br/> <br/>
+
+  <div class="block">
+    <label for="price">Price range (per room)</label>
+   <div class="block">
+    <input type="number" name="pricefrom" min=0 max="5000"  value="0">
+   </div>
+   <div class="block">
+   <label>to</label>
+ </div>
+   <div class="block">
+    <input type="number" name="priceto" min=0 max="5000"  value="0">
+   </div>
+  </div>
+
+   <br/><br/>
+    <label for="description">Description</label>
+    <textarea rows="6" name="description" id="description"></textarea>
+
+     <br/><br/>
+    <label for="requirement">Special Requirement</label>
+    <textarea rows="6" name="requirement" id="requirement"></textarea>
+<!-- 
+    <label for="file-upload" class="custom-file-upload" style="text-align: center">
+    <i class="fas fa-upload"></i> Upload pictures of your room
+    </label>
+    <input id="file-upload" name="roompic" type="file" accept="image/*" multiple > -->
+
+    <div class="rmpic">
+          <input type="file" name="file-1[]" id="file-1" class="inputfile" accept="image/*" data-multiple-caption="{count} files selected" multiple />
+          <label for="file-1"> <i class="fas fa-upload"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></i> Upload pictures of your room</br>Hold 'shift' to select multiple pictures</label>
+        </div>
+
+
+  
+    <input type="submit" value="Submit">
+
+   <!--  <div class="inputfile-box">
+  <input type="file" id="file" class="inputfile" onchange='uploadFile(this)'>
+  <label for="file">
+    <span id="file-name" class="file-box"></span>
+    <span class="file-button">
+      <i class="fa fa-upload" aria-hidden="true" onchange='uploadFile(this)'></i>
+      Select File
+    </span>
+  </label>
+</div> -->
+
+
+<!-- 
+        <div class="box">
+          <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+          <label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose a file&hellip;</span></label>
+        </div> -->
+
+
+
+  </form>
+</div>
+</div>
+
+    </div>
+   </div>
+</div>
+  </div>
+
+<!-- 
+<script>
+function uploadFile(target) {
+  document.getElementById("file-name").innerHTML = target.files[0].name;
+}
+</script>
+<script src="js/custom-file-input.js"></script> -->
+<!-- 
+  </body>
+</html> -->
+<% include partials/footer%>

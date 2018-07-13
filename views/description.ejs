@@ -1,0 +1,76 @@
+<% include partials/header%>
+   <% if (errors !=undefined){ %>
+       <ul>
+       <% errors.forEach(function(error){ %>
+       <li><%= error.msg %></li>
+    <% }) %>
+      </ul>
+    <% } %>
+
+<div class="col-xs-12 col-md-10 col-lg-10 offset-lg-1 offset-md-1">
+   <div class="description" style="width: 50%; display: inline-block; vertical-align: top">
+ <h2 style="color:#4B9CD3"><%= sublease.aptname %> <%= sublease.bedroomnum %>B<%=sublease.bathroomnum %>B </h2>
+ <h6 style="color: #CCCCCC"><%= sublease.aptadr %>, <%= sublease.city %>, <%= sublease.state %>, <%= sublease.city %>, <%= sublease.zipcode %></h6>
+ <hr>
+ <p><span style="font-weight:bold">Availability:</span> <%= sublease.startdate%> to <%= sublease.enddate%> </p>
+ <p><span style="font-weight:bold">Price range:</span> $<%= sublease.pricefrom%> to $<%= sublease.priceto%></p>
+ <p><span style="font-weight:bold">Number of bedrooms:</span> <%= sublease.bedroomnum%></p>
+ <p><span style="font-weight:bold">Number of bathrooms:</span> <%= sublease.bathroomnum%></p>
+ <p><span style="font-weight:bold">Roommate(s):</span> <%= sublease.rmnum%> <%= sublease.rmgender%></p>
+<p><span style="font-weight:bold">Number of room for sublease:</span> <%= sublease.roomforsub%></p>
+ <hr>
+      <p><%= sublease.description%></p>
+  </br>
+       <p><span style="font-weight:bold">Special Requiremnt: </span>  <%= sublease.requirement%></p>
+    </div>
+    <div class="pic" style="display: inline-block; vertical-align: top; margin-top: 60px">
+    <!-- <img src="http://via.placeholder.com/550x350"> -->
+      <img src="/uploads/<%=sublease.photos[0]%>">
+
+    <div class="contactform">
+     <h3>Contact Form </h3>
+ </br>
+        <div class ="block">
+          <label for="cname">Name</label>
+          <input type="text" id="cname" name="cname" placeholder="">
+        </div>
+     <span>
+       <div class="block">
+         <label for="cemail">Email</label>
+         <input type="email" id="cemail" name="cemail" placeholder="">
+       </div>
+     </span>
+ <br/> <br/>
+      <div class="block">
+      	<label for="cstartdate">Start date</label>
+        <input type="date" id="cstartdate" name="cstartdate">
+       </div>
+         <span>
+    <div class="block">
+    	 <label for="cstartdate">Start date</label>
+         <input type="date" id="enddate" name="enddate">
+  </div>
+       </span>
+
+   <br/> <br/>
+
+       <label for="cmessage">Your message</label>
+    <textarea rows="6" name="cmessage" id="cmessage" style="height: 290px"></textarea>
+
+       <input type="submit" value="Submit">
+</div>
+
+
+  </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<% include partials/footer%>

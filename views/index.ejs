@@ -1,0 +1,18 @@
+<% include partials/header%>
+
+    <% if (errors !=undefined){ %>
+       <ul>
+       <% errors.forEach(function(error){ %>
+       <li><%= error.msg %></li>
+    <% }) %>
+      </ul>
+    <% } %>
+
+<div id="home" class="bg-img">
+  <div class="tagline">
+  <h1>Want to find a room for summer?</h1>
+    </div>
+<a href="/sublease/all"><button>START SEARCHING</button></a>
+</div>
+<% include partials/footer%>
+

@@ -1,0 +1,287 @@
+/*****Global Style****/
+/****navbar****/
+.bg-light{
+	background-color:white !important;
+	padding-top: 30px;
+	padding-bottom:30px;
+	box-shadow:2px 2px 5px rgba(0, 0, 0, 0.349019607843137);
+
+}
+.navbar-light .navbar-nav .nav-link{
+	color:#4B9CD3;
+}
+.navbar-collapse{
+  margin-left: 50%;
+}
+.navbar-expand-lg .navbar-collapse{
+  display: none !important;
+  display: inline-block !important;
+}
+/****footer****/
+.footer{
+    background-color:#333333;
+    height: 80px;
+    padding: 30px 0px;
+    text-align: center;
+}
+.footer a {
+  color: white;
+  text-align: center;
+  margin:auto;
+}
+.footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+/*****Home Page**********/
+#home.bg-img{
+  background: url(../img/home3.jpg) no-repeat center center fixed;
+  box-shadow: inset 0 0 0 800px rgba(0, 0, 0, 0.4);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#home h1{
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+}
+#home button{
+  background-color: #4B9CD3;
+  color: white;
+  width: 180px;
+  height: 50px;
+  border-style: none;
+  margin-left: 43%;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius:5px;
+
+}
+button:focus{
+  outline: none;
+}
+
+/****Description Page*****/
+.description span:before{
+  width: 0px !important;
+}
+.description{
+  margin-top: 60px;
+}
+
+.description p{
+  margin-bottom:0;
+}
+
+.contactform{
+  background-color: rgba(242, 242, 242, 1);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.349019607843137);
+  padding: 10%;
+  padding-left: 12%;
+  padding-right:12%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.contactform h3{
+  text-align: center;
+}
+
+.pic img{
+  width: 550px;
+}
+
+/****Sublease Grid Page ******/
+.grid span:before{
+  width: 20px !important;
+}
+.block2 span:before{
+  width: 0px !important;
+}
+
+img{
+  vertical-align: text-bottom;
+  width: 450px;
+}
+.grid{
+  margin-top: 60px;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: black;
+}
+
+.grid p{
+  margin-bottom:0;
+
+}
+
+
+/****Sublet My Room Page*****/
+.subleaseapp{
+	background-color:rgba(242, 242, 242, 1);
+	padding-top:50px;
+	padding-bottom: 50px;
+}
+.subleaseform{
+	background-color:white;
+	padding-bottom:100px;
+	box-shadow:0px 3px 6px rgba(0, 0, 0, 0.349019607843137);
+}
+.subleaseform h2{
+	text-align: center;
+	padding-top:100px;
+	margin-bottom:50px;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=date]{
+   /* width: 100%;*/
+   /* padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;*/
+    border: none;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    background-color: transparent;
+}
+
+#aptadr{
+	width: 235%;
+}
+/*#startdate{
+	width: 90%;
+}*/
+
+#enddate{
+	width: 90%;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: none;
+}
+
+input, label {
+    display:block;
+}
+
+.block{
+	display: inline-block;
+}
+
+textarea{
+	width: 100%;
+  background-color: transparent;
+}
+.rmpic {
+  /*  border: 1px solid #ccc;*/
+    /*display: inline-block;*/
+    width: 70%;
+    height: 200px;
+    padding: 6px 12px;
+   /* padding:25%;*/
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+    background-color:rgba(228, 228, 228, 1);
+    color:#CCCCCC;
+    padding-top:70px;
+}
+input[type=file]{
+	/*display: none;*/
+  margin: auto;
+  font-size: 12px; 
+  margin-left: 30%; 
+}
+input[type=submit]{
+	margin: auto;
+	margin-top: 50px;
+  border-radius:5px;
+}
+
+.content{
+	margin:auto;
+}
+
+
+.content
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+span:before{
+    content:" "; 
+    display:inline-block; 
+    width:50px;
+}
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+.rmpic label{
+  text-align: center;
+  font-size: 18px;
+}
+
+input[type=submit]{
+  background-color: #4B9CD3;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border-style: none;
+}
+
+
+/*.box{
+  background-color: rgba(228, 228, 228, 1);
+}
+*/
+
+/*
+.inputfile-box {
+  position: relative;
+}
+
+.inputfile {
+  display: none;
+}
+
+.container {
+  display: inline-block;
+  width: 100%;
+}
+
+.file-box {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid;
+  padding: 5px 0px 5px 5px;
+  box-sizing: border-box;
+  height: calc(2rem - 2px);
+}
+
+.file-button {
+  background: red;
+  padding: 5px;
+  position: absolute;
+  border: 1px solid;
+  top: 0px;
+  right: 0px;
+}*/
