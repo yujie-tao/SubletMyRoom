@@ -5,9 +5,7 @@ This is a prototype I made for a pre-startup project called SubletMyRoom. It's a
 ### Installation
 
 ```
-
 node SubletMyRoom
 mongod
-mongodb
-
+mongo
 ```
